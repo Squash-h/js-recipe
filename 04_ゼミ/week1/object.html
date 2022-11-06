@@ -9,11 +9,14 @@
   <body>
     <script>
       const me = {
-        name: `栃原弘幸`,
+        name: "栃原弘幸",
         age: 21,
         isMentor: false,
-        university: { name: `早稲田大学`, class: 2 },
-        hobbies: [`野球観戦`, `少林寺拳法`, `カレーを食べる`],
+        university: { name: "早稲田大学", class: 2 },
+        hobbies: ["野球観戦", "少林寺拳法"],
+        hello: function () {
+          console.log("よろしくお願いします")
+        },
       }
 
       // 0 表示する
@@ -38,10 +41,10 @@
       console.log(`学年は、${me.university.class}年です!`)
 
       // 5 配列
-      for (let i = 0; i < me.hobbies.length; i++) {
-        console.log(`私の趣味は${me.hobbies(0)}です`)
-        console.log(`私の趣味は${me.hobbies(1)}です`)
-        console.log(`私の趣味は${me.hobbies(2)}です`) // この行を書き換えて、趣味が1つずつ表示されるようにしてください。
+      for (let i = 0; i < 1; i++) {
+        console.log(`私の趣味は${me.hobbies[0]}です`)
+        console.log(`私の趣味は${me.hobbies[1]}です`)
+        // この行を書き換えて、趣味が1つずつ表示されるようにしてください。
       }
 
       // 6 関数
